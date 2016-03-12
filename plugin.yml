@@ -3,8 +3,8 @@ description: Memudahkan Player Untuk Melihat Staff Dengan Mengetik /staff
 author: NightmareCybers
 main: Staff\Main
 load: POSTWORLD
-version: 1.0.0
-api: [1.8.0]
+version: 6.9
+api: [1.12.0]
 commands:
     staff:
         usage: /staff
