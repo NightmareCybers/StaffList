@@ -1,0 +1,15 @@
+name: Staff
+description: Memudahkan Player Untuk Melihat Staff Dengan Mengetik /staff
+author: NightmareCybers
+main: Staff\Main
+load: POSTWORLD
+version: 1.0.0
+api: [1.8.0]
+commands:
+    staff:
+        usage: /staff
+        description: Staff List
+permissions:
+    staff.list:
+        default: true
+        description: Membolehkan User Untuk Membuka /staff
