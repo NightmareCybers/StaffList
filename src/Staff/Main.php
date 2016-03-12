@@ -1,5 +1,5 @@
 <?php
-namespace NightmareCybers\staff;
+namespace Staff;
 
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener{
         switch ($cmd){
             case "staff":
                 if (!($sender instanceof Player)){
-                    $sender->sendMessage(TEXTFORMAT::GOLD . "§1§lC§r§9yber §l§2R§r§aealms §l§4S§r§ctaff");
+                    $sender->sendMessage(TEXTFORMAT::GOLD . "Â§1Â§lCÂ§rÂ§9yber Â§lÂ§2RÂ§rÂ§aealms Â§lÂ§4SÂ§rÂ§ctaff");
                     $sender->sendMessage(TEXTFORMAT::GREEN . "- " . $this->getConfig()->get("staff1"));
                     $sender->sendMessage(TEXTFORMAT::GREEN . "- " . $this->getConfig()->get("staff2"));
                     $sender->sendMessage(TEXTFORMAT::GREEN . "- " . $this->getConfig()->get("staff3"));
@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener{
                 }
                 $player = $this->getServer()->getPlayer($sender->getName());
                 if ($player->hasPermission("staff.rules")){
-                    $sender->sendMessage("§1§lC§r§9yber §l§2R§r§aealms §l§4S§r§ctaff");
+                    $sender->sendMessage("Â§1Â§lCÂ§rÂ§9yber Â§lÂ§2RÂ§rÂ§aealms Â§lÂ§4SÂ§rÂ§ctaff");
                     $sender->sendMessage("- " . $this->getConfig()->get("staff1"));
                     $sender->sendMessage("- " . $this->getConfig()->get("staff2"));
                     $sender->sendMessage("- " . $this->getConfig()->get("staff3"));
